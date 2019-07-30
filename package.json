@@ -1,0 +1,24 @@
+{
+    "name": "libuv",
+    "version": "1.0.0",
+    "description": "",
+    "gypfile": true,
+    "main": "./build/Release/libuv",
+    "scripts": {
+        "start": "node index.js",
+        "debug": "node --nolazy --inspect-brk=9229 index.js",
+        "build:dev": "node-gyp build --debug",
+        "build": "node-gyp build",
+        "rebuild:dev": "node-gyp rebuild --debug",
+        "rebuild": "node-gyp rebuild",
+        "clean": "node-gyp clean"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "node-addon-api": "^1.7.1"
+    },
+    "devDependencies": {
+        "bindings": "^1.5.0"
+    }
+}
